@@ -1,0 +1,3 @@
+GOOGLE_TOKEN_PARAM_ID = "Google-Token"
+FACEBOOK_TOKEN_PARAM_ID = "Facebook-Token"
+GITHUB_TOKEN_PARAM_ID = "Github-Token"
