@@ -1,0 +1,11 @@
+# this should be used for local development
+version: '3'
+services:
+
+
+  tododemo:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:8000:8000"
