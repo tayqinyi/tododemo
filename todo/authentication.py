@@ -26,6 +26,7 @@ class SocialAuthAuthentication(authentication.BaseAuthentication):
             return None
 
         if username:
+            logger.info(f"Authenticate user {username}")
             user = User.objects.update_or_create(username=username)
             return user
         else:

@@ -22,7 +22,7 @@ class ToDoListCreateView(generics.ListCreateAPIView):
         return response.Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
-class ToDoDeleteView(generics.DestroyAPIView):
+class ToDoDeleteView(generics.RetrieveDestroyAPIView):
 
     permission_classes = [IsAuthenticated]
     serializer_class = ToDoSerializer
